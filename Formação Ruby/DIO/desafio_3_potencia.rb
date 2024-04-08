@@ -8,10 +8,8 @@ end
 
 puts "Os números da lista são: #{lista}"
 
-lista_potencia = []
-
-lista.each do |i|
-  lista_potencia << i**3
+lista_potencia = lista.map do |i|
+  i**3
 end
 
 puts "Os números da lista à terceira potencia são: #{lista_potencia}"
